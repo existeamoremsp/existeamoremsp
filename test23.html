@@ -1,0 +1,75 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex, nofollow" />
+	<title>jQuery Flip example</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/mniflip.js"></script>
+	<script>
+    $(function(){
+    	$(".flip-horizontal").flip({
+  			trigger: 'hover'
+		});
+		$(".flip-vertical").flip({
+			axis: 'x',
+  			trigger: 'hover'
+		});
+    });
+  	</script>
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <style>	
+body{ 
+	font-family:'Open Sans',sans-serif; 
+	margin-top: 50px;
+	text-align: center;
+}
+
+#flip-this {
+	height: 199px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#flip-this img {
+	width: 300px;
+	height: auto;
+}
+
+#flip-this .back {
+    background: #2184cd;
+    color: #fff;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+	<h2>Horizontal Flip</h2>
+	
+	<div id="flip-this" class="flip-horizontal"> 
+  		<div class="front"> 
+    		<img src="image.jpg" alt="" />
+  		</div> 
+  		<div class="back">
+    		<h3>Some Text in the Back!</h3>
+  		</div> 
+	</div>
+	
+	<h2>Vertical Flip</h2>
+	
+	<div id="flip-this" class="flip-vertical"> 
+  		<div class="front"> 
+    		<img src="image.jpg" alt="" />
+  		</div> 
+  		<div class="back">
+    		<h3>Some Text in the Back!</h3>
+  		</div> 
+	</div>
+
+</body>
+</html>
