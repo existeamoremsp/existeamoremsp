@@ -21,7 +21,7 @@ font-family: 'Roboto', sans-serif;}
 
 	}
 #background_music{
-/*				background: url(img/play.png) center no-repeat;
+/*				background: url(play.png) center no-repeat;
 			background-size: contain;*/
 }
 
@@ -2354,7 +2354,7 @@ z-index: 0;
 	/* flex-direction: column; */
 	/* align-items: center; */
 	align-self: center;
-	background: url("img/banner-principal.gif") center fixed;
+	background: url("banner-principal.gif") center fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	/* margin: auto;
@@ -2446,7 +2446,7 @@ path:hover.regiao-lest{
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
-.fancybox-prev span{background-image:url(img/fancybox_sprite.png)}
+.fancybox-prev span{background-image:url(fancybox_sprite.png)}
 #fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:.8;cursor:pointer;z-index:8060}
 #fancybox-loading div{width:44px;height:44px;background:url(images-fancy/fancybox_loading.gif) center center no-repeat}
 .fancybox-close{position:absolute;top:-18px;right:-18px;width:36px;height:36px;cursor:pointer;z-index:8040}
@@ -2616,7 +2616,7 @@ width: 100%;
 
 background-color: #fff;
 
-background: url('img/bg-lamb.png');
+background: url('bg-lamb.png');
 
 background-size: contain;
 }
@@ -2698,7 +2698,7 @@ h2.titulo5 {
 }
 
 .predio{
-		background: url("img/predio.png") center;
+		background: url("predio.png") center;
 		background-size: contain;
 		background-repeat: no-repeat;
 		height: 100vh;
