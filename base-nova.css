@@ -1363,7 +1363,7 @@ z-index: 999;
 
 background: url(ocupacao.png) center;
 
-/* background-size: cover; */
+background-size: COVER;
 
 background-repeat: no-repeat;
 
@@ -2833,7 +2833,7 @@ h2.titulo5 {
 		/* background: url("ocupacao.png") center; */
 		/* background-size: cover; */
 		/* background-repeat: no-repeat; */
-		height: 1600px;
+		height: 1850px;
 		width: 100%;
 		background-size: contain;
 }
