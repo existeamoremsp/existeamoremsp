@@ -3,6 +3,7 @@
 	border:0;
 	outline:0;
 	line-height:25px;
+
 	-webkit-font-smoothing:antialiased;
 font-family: 'Roboto', sans-serif;}
 	nav ul{list-style:none;
@@ -21,7 +22,7 @@ font-family: 'Roboto', sans-serif;}
 
 	}
 #background_music{
-/*				background: url(play.png) center no-repeat;
+/*				background: url(img/play.png) center no-repeat;
 			background-size: contain;*/
 }
 
@@ -1338,7 +1339,55 @@ margin:10px 0 0 0;
 	align-items:center;
 	align-self:center;
 	align-content:center}
-	#content-icons{
+	#content-icons-predio{
+
+max-width:100%;
+
+width: 100%;
+
+display:flex;
+
+flex-direction: column;
+
+align-items:center;
+
+align-content:center;
+
+flex-wrap:wrap;
+
+position: relative;
+
+height:auto;
+
+z-index: 999;
+
+background: url(img/ocupacao.png) center;
+
+/* background-size: cover; */
+
+background-repeat: no-repeat;
+
+margin: auto;
+
+clear:both;
+
+padding: 30px 0;
+
+background-color: #fcf9ef;
+
+box-shadow:0 2px 6px rgba(51,51,51,.2);
+}
+
+#content-icons-predio p.text-intro{
+    font-size: 2.1em;
+    line-height: 1.8em;
+    text-align: center;
+    color: #333;
+    font-weight: 100;
+    margin: 0;
+    width: 100%;
+}
+#content-icons{
 
 max-width:100%;
 
@@ -1364,7 +1413,7 @@ margin: auto;
 
 clear:both;
 
-padding: 30px;
+padding: 30px 0;
 
 background-color: #fcf9ef;
 
@@ -1372,6 +1421,49 @@ box-shadow:0 2px 6px rgba(51,51,51,.2);
 }
 
 #content-icons p.text-intro{
+    font-size: 2.1em;
+    line-height: 1.8em;
+    text-align: center;
+    color: #333;
+    font-weight: 100;
+    margin: 0;
+    width: 100%;
+}
+
+	#content-icons-mapa{
+
+max-width:100%;
+
+width: 100%;
+
+display:flex;
+
+flex-direction: column;
+
+align-items:center;
+
+align-content:center;
+
+flex-wrap:wrap;
+
+position: relative;
+
+height:auto;
+
+z-index: 999;
+
+margin: auto;
+
+clear:both;
+
+padding: 30px 0;
+
+background-color: #fcf9ef;
+
+box-shadow:0 2px 6px rgba(51,51,51,.2);
+}
+
+#content-icons-mapa p.text-intro{
     font-size: 2.1em;
     line-height: 1.8em;
     text-align: center;
@@ -1399,7 +1491,7 @@ flex-wrap:wrap;
 
 position: relative;
 
-height: 120vh;
+height: 105vh;
 
 z-index: 999;
 
@@ -1547,18 +1639,31 @@ clear:both;
 
 	max-width:100%;
 	margin:0 auto}
-	@media only screen and (min-width:767px) and (max-width:959px){#content-icons{width:100%;
+	@media only screen and (min-width:767px) and (max-width:959px){#content-icons{
 
-	margin:0 auto;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	align-content:center;
-	margin-top:20px;
-	flex-direction:column;
-	padding:20px 0;
-	clear:both;
-	height:auto}
+width:100%;
+
+margin:0 auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+align-content:center;
+
+/* margin-top:20px; */
+
+flex-direction:column;
+
+padding:20px 0;
+
+clear:both;
+
+height:auto;
+
+}
 	.incomplete-box p{color:#333;
 
 	padding:0 20px}
@@ -2354,7 +2459,7 @@ z-index: 0;
 	/* flex-direction: column; */
 	/* align-items: center; */
 	align-self: center;
-	background: url("banner-principal.gif") center fixed;
+	background: url("img/banner-principal.gif") center fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	/* margin: auto;
@@ -2380,6 +2485,8 @@ left: 0;
 object-fit: cover;
 
 width: 100%;
+
+MAX-WIDTH: 95%;
 
 margin: auto;
 
@@ -2446,7 +2553,7 @@ path:hover.regiao-lest{
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
-.fancybox-prev span{background-image:url(fancybox_sprite.png)}
+.fancybox-prev span{background-image:url(img/fancybox_sprite.png)}
 #fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:.8;cursor:pointer;z-index:8060}
 #fancybox-loading div{width:44px;height:44px;background:url(images-fancy/fancybox_loading.gif) center center no-repeat}
 .fancybox-close{position:absolute;top:-18px;right:-18px;width:36px;height:36px;cursor:pointer;z-index:8040}
@@ -2571,9 +2678,13 @@ position: relative;
 
 width: 100%;
 
-height: 75vh;
+height: 115vh;
 
 background-color: #f03232;
+
+background: url('img/casal-02.jpg')center no-repeat;
+
+background-size: cover;
 }
 
 .bloco-historia3 {
@@ -2582,9 +2693,13 @@ position: relative;
 
 width: 100%;
 
-height: 75vh;
+height: 116vh;
 
 background-color: #44985a;
+
+background: url(img/casal-03.jpg)center no-repeat;
+
+background-size: cover;
 }
 
 .bloco-historia4 {
@@ -2593,9 +2708,13 @@ position: relative;
 
 width: 100%;
 
-height: 75vh;
+height: 130vh;
 
 background-color: #7d91d1;
+
+background: url(img/casal-04.jpg)center no-repeat;
+
+background-size: cover;
 }
 
 .bloco-historia5 {
@@ -2608,6 +2727,18 @@ background-color: #f9284b;
 
 box-shadow: 5px 9px 12px -7px rgba(31,31,31,1);
 }
+@media screen and (max-width:768px){
+
+		.container
+		{
+			display:block
+
+	}
+	.bloco-lambe {
+
+		min-width:90vw!important;
+	}
+	}
 .bloco-lambe {
 
 position: relative;
@@ -2616,7 +2747,7 @@ width: 100%;
 
 background-color: #fff;
 
-background: url('bg-lamb.png');
+background: url('img/bg-lamb.png');
 
 background-size: contain;
 }
@@ -2669,9 +2800,10 @@ h2.titulo2 {
     font-weight: 900;
 }
 h2.titulo3 {
+    line-height: 1em;
     text-transform: uppercase;
     color: #44985a;
-     font-weight: 900;
+    font-weight: 900;
 }
 h2.titulo4 {
     color: #7d91d1;
@@ -2698,11 +2830,12 @@ h2.titulo5 {
 }
 
 .predio{
-		background: url("predio.png") center;
+		/* background: url("img/ocupacao.png") center; */
+		/* background-size: cover; */
+		/* background-repeat: no-repeat; */
+		height: 1600px;
+		width: 100%;
 		background-size: contain;
-		background-repeat: no-repeat;
-		height: 100vh;
-		width: 75%;
 }
 .bloco-mapa {
 
@@ -2734,7 +2867,13 @@ background: #151e27;
 
 #content-icons:last-child {
 
-	margin-bottom: 50px;
+/* margin-bottom: 50px; */
+
+background: url('img/sp-city.jpg')  center no-repeat;
+
+background-size: cover;
+
+width: 100%;
 }
 #leafContainer > div 
 {
