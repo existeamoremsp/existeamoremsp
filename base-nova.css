@@ -22,7 +22,7 @@ font-family: 'Roboto', sans-serif;}
 
 	}
 #background_music{
-/*				background: url(img/play.png) center no-repeat;
+/*				background: url(play.png) center no-repeat;
 			background-size: contain;*/
 }
 
@@ -1361,7 +1361,7 @@ height:auto;
 
 z-index: 999;
 
-background: url(img/ocupacao.png) center;
+background: url(ocupacao.png) center;
 
 /* background-size: cover; */
 
@@ -2459,7 +2459,7 @@ z-index: 0;
 	/* flex-direction: column; */
 	/* align-items: center; */
 	align-self: center;
-	background: url("img/banner-principal.gif") center fixed;
+	background: url("banner-principal.gif") center fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	/* margin: auto;
@@ -2553,7 +2553,7 @@ path:hover.regiao-lest{
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
-.fancybox-prev span{background-image:url(img/fancybox_sprite.png)}
+.fancybox-prev span{background-image:url(fancybox_sprite.png)}
 #fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:.8;cursor:pointer;z-index:8060}
 #fancybox-loading div{width:44px;height:44px;background:url(images-fancy/fancybox_loading.gif) center center no-repeat}
 .fancybox-close{position:absolute;top:-18px;right:-18px;width:36px;height:36px;cursor:pointer;z-index:8040}
@@ -2682,7 +2682,7 @@ height: 115vh;
 
 background-color: #f03232;
 
-background: url('img/casal-02.jpg')center no-repeat;
+background: url('casal-02.jpg')center no-repeat;
 
 background-size: cover;
 }
@@ -2697,7 +2697,7 @@ height: 116vh;
 
 background-color: #44985a;
 
-background: url(img/casal-03.jpg)center no-repeat;
+background: url(casal-03.jpg)center no-repeat;
 
 background-size: cover;
 }
@@ -2712,7 +2712,7 @@ height: 130vh;
 
 background-color: #7d91d1;
 
-background: url(img/casal-04.jpg)center no-repeat;
+background: url(casal-04.jpg)center no-repeat;
 
 background-size: cover;
 }
@@ -2747,7 +2747,7 @@ width: 100%;
 
 background-color: #fff;
 
-background: url('img/bg-lamb.png');
+background: url('bg-lamb.png');
 
 background-size: contain;
 }
@@ -2830,7 +2830,7 @@ h2.titulo5 {
 }
 
 .predio{
-		/* background: url("img/ocupacao.png") center; */
+		/* background: url("ocupacao.png") center; */
 		/* background-size: cover; */
 		/* background-repeat: no-repeat; */
 		height: 1600px;
@@ -2869,7 +2869,7 @@ background: #151e27;
 
 /* margin-bottom: 50px; */
 
-background: url('img/sp-city.jpg')  center no-repeat;
+background: url('sp-city.jpg')  center no-repeat;
 
 background-size: cover;
 
