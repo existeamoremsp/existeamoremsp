@@ -32,6 +32,8 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://codepen.io/fancyapps/pen/VGoRpV"></script>
   <link rel="stylesheet" type="text/css" href="fancy.css">
   <script  src="slick.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -362,48 +364,75 @@ body{
 
                 <div class="parada-slide slider slider-single">
                   <div>
-                    <a  data-fancybox-group="group1" class="lightbox" alt="foto1" title="foto1" href="1.jpg">
-                      <img src="1.jpg " alt="foto1" class="img-parada gallery">
-                    </a>
+
+                      <img id="l" href="javascript:;" src="Amanda_Lima_6.jpg " alt="foto1" class="img-parada gallery">
+
+
+
                   
                   </div>
 
                   <div>
-                    <a  data-fancybox-group="group1" class="lightbox" alt="foto2" title="foto2" href="2.jpg">
+                    
                       
-                      <img  src="2.jpg " alt="foto2" class="img-parada gallery">
-                    </a>
+                      <img  id="g" href="javascript:;" src="Amanda_Lima_10.jpg " alt="foto2" class="img-parada gallery">
+
+                  </div>
+
+                  <div>
+
+                      
+                      <img  id="b" href="javascript:;" src="3.jpg " alt="foto3" class="img-parada gallery">
+
                   
                   </div>
 
                   <div>
-                    <a  data-fancybox-group="group1" class="lightbox" alt="foto3" title="foto3" href="3.jpg">
+                    
                       
-                      <img  src="3.jpg " alt="foto3" class="img-parada gallery">
-                    </a>
+                      <img  id="t" href="javascript:;" src="4.jpg " alt="foto4" class="img-parada gallery">
                   
-                  </div>
-
-                  <div>
-                    <a  data-fancybox-group="group1" class="lightbox" alt="foto4" title="foto4" href="4.jpg">
-                      
-                      <img  src="4.jpg " alt="foto4" class="img-parada gallery">
-                    </a>
                   
                   </div>
 
                 
                 </div>
+                <!-- asd -->
 
+<script>
+  
+  $("#l").on('click', function() {
+
+  $.fancybox.open('<div class="message"><img src="Amanda_Lima_6.jpg"/><h2>Hello!</h2><p>You are awesome!</p></div>');
+
+});
+  $("#g").on('click', function() {
+
+  $.fancybox.open('<div class="message"><img src="Amanda_Lima_10.jpg "/><h2>Hello!</h2><p>You are awesome!</p></div>');
+
+});  
+  $("#b").on('click', function() {
+
+  $.fancybox.open('<div class="message"><img src="4.jpg "/><h2>Hello!</h2><p>You are awesome!</p></div>');
+
+});  
+  $("#t").on('click', function() {
+
+  $.fancybox.open('<div class="message"><img src="3   .jpg "/><h2>Hello!</h2><p>You are awesome!</p></div>');
+
+});
+</script>
+</div>
+<!-- asd -->
                 <div class="wrapper-thumbs slider slider-nav">
                   <div class="parada-thumbs">
-                    <img src="1.jpg " alt="" class="img-parada">
+                    <img src="Amanda_Lima_6.jpg " alt="" class="img-parada">
                     <h2  style="color:#f9284b;"> Gustavo e Stefano</h2>    <p style=" width: 100%;margin: 0;">Cada um de nós mora em sua própria casa. Eu acho que isso é uma dica importante sobre o amor: não se apegar àquele formato que herdamos dos pais”</p>
                   
                   </div>
 
                   <div class="parada-thumbs">
-                    <img src="2.jpg " alt="" class="img-parada">
+                    <img src="Amanda_Lima_10.jpg" alt="" class="img-parada">
                     <h2  style="color:#f9284b;"> Parisi</h2>    <p style=" width: 100%;margin: 0;">Ninguém acorda bem todos os dias. Tenho orgulho de ser quem eu sou, da minha jornada e até das fraquezas </p>
                   
                   </div>
@@ -497,6 +526,7 @@ body{
                 palavra = this.title;
                 document.getElementById("fancyalter").alt = palavra;
                 document.getElementById("fancyalter").title = palavra;
+
                 }
                 });
                 });
@@ -909,7 +939,7 @@ A farmacêutica conta que os kits são muito importantes. “O Entrega foi a pri
 
 </div>
 
-<div id="Zona-sul" class="hide">
+<div id="Zona-sul" class="hide" style="background-color: red">
   <div>
     <img src="banner-zona-sul-felipe.gif" alt=" "  title="">
 
@@ -1320,6 +1350,35 @@ showEarly: false
 });
 });
 
+</script>
+
+<script>
+  //separador de img//
+  var slider = document.getElementById('slider');
+var cima = document.getElementById('cima');
+
+// posicionar slider
+var sliderWidth = slider.getBoundingClientRect().width;
+var cimaWidth = cima.getBoundingClientRect().width;
+slider.style.left = cimaWidth - (sliderWidth / 2) + 'px';
+
+// arrastar slider
+var ativo = false;
+var offset = 0;
+
+function toggleAtivo(e) {
+    if (e.target != slider) return;
+    ativo = (e.type == 'mousedown');
+    var sliderPosition = slider.getBoundingClientRect().left;
+    offset = sliderPosition - e.pageX;
+}
+window.addEventListener('mousedown', toggleAtivo);
+window.addEventListener('mouseup', toggleAtivo);
+window.addEventListener('mousemove', function (e) {
+    if (!ativo) return;
+    cima.style.width = e.pageX + 'px';
+    slider.style.left = (e.pageX + offset) + 'px';
+});
 </script>
 </body>
 <footer>
