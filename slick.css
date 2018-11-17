@@ -86,6 +86,9 @@
 .slick-slide img
 {
     display: block;
+    max-height: 800px;
+    background-size: cover;
+    object-fit: cover;
 }
 .slick-slide.slick-loading img
 {

@@ -1,6 +1,7 @@
 <html lang="PT_br"><head>
   <meta charset="UTF-8">
   <title>Existe Amor em SP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
        
@@ -12,9 +13,11 @@
     <script src="jquery.easing.1.3.js" ></script>
     <script src="jquery.booklet.1.1.0.min.js" ></script>
 
+
     <link href="jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
     <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
-
+  <link href="foundation.css" rel="stylesheet" type="text/css" />
+  <link href="twentytwenty.css" rel="stylesheet" type="text/css" />
     <script src="cufon-yui.js" ></script>
     <script src="cufon/ChunkFive_400.font.js" ></script>
     <script src="cufon/Note_this_400.font.js" ></script>
@@ -375,14 +378,14 @@ body{
                   <div>
                     
                       
-                      <img  id="g" href="javascript:;" src="Amanda_Lima_10.jpg " alt="foto2" class="img-parada gallery">
+                      <img  id="g" href="javascript:;" src="Amanda_Lima_10.jpg" alt="foto2" class="img-parada gallery">
 
                   </div>
 
                   <div>
 
                       
-                      <img  id="b" href="javascript:;" src="3.jpg " alt="foto3" class="img-parada gallery">
+                      <img  id="b" href="javascript:;" src="IMG_7005.jpg" alt="foto3" class="img-parada gallery">
 
                   
                   </div>
@@ -390,7 +393,7 @@ body{
                   <div>
                     
                       
-                      <img  id="t" href="javascript:;" src="4.jpg " alt="foto4" class="img-parada gallery">
+                      <img  id="t" href="javascript:;" src="gustavo e cassiano.jpg" alt="foto4" class="img-parada gallery">
                   
                   
                   </div>
@@ -398,7 +401,6 @@ body{
                 
                 </div>
                 <!-- asd -->
-
 <script>
   
   $("#l").on('click', function() {
@@ -413,12 +415,12 @@ body{
 });  
   $("#b").on('click', function() {
 
-  $.fancybox.open('<div class="message"><img src="4.jpg "/><h2>Hello!</h2><p>You are awesome!</p></div>');
+  $.fancybox.open('<div class="message"><img src="IMG_7005.jpg"/><h2>Hello!</h2><p>You are awesome!</p></div>');
 
 });  
   $("#t").on('click', function() {
 
-  $.fancybox.open('<div class="message"><img src="3   .jpg "/><h2>Hello!</h2><p>You are awesome!</p></div>');
+  $.fancybox.open('<div class="message"><img src="gustavo e cassiano.jpg"/><h2>Hello!</h2><p>You are awesome!</p></div>');
 
 });
 </script>
@@ -438,13 +440,13 @@ body{
                   </div>
 
                   <div class="parada-thumbs">
-                    <img src="3.jpg " alt="" class="img-parada">
+                    <img src="IMG_7005.jpg" alt="" class="img-parada">
                     <h2 style="color:#f9284b;"> Nenê e Julia</h2>    <p style=" width: 100%; margin: 0;">Ninguém acorda bem todos os dias. Tenho orgulho de ser quem eu sou, da minha jornada e até das fraquezas</p>
                   
                   </div>
 
                   <div class="parada-thumbs">
-                    <img src="4.jpg" alt="" class="img-parada">
+                    <img src="gustavo e cassiano.jpg" alt="" class="img-parada">
                     <h2 style="color:#f9284b;"> Cassiano e Gustavo</h2>    <p style=" width: 100%; margin: 0;">Ilha Solteira era uma cidade composta majoritariamente por estudantes homens heterossexuais. Nós fomos um dos pioneiros em fazer pegação</p>
                   
                   </div>
@@ -1354,7 +1356,7 @@ showEarly: false
 
 <script>
   //separador de img//
-  var slider = document.getElementById('slider');
+  var slider = document.getElementById('sliderBTN');
 var cima = document.getElementById('cima');
 
 // posicionar slider
@@ -1380,6 +1382,14 @@ window.addEventListener('mousemove', function (e) {
     slider.style.left = (e.pageX + offset) + 'px';
 });
 </script>
+    <script src="jquery.event.move.js"></script>
+    <script src="jquery.twentytwenty.js"></script>
+    <script>
+    $(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+    </script>
 </body>
 <footer>
 <p >

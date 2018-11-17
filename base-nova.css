@@ -647,7 +647,7 @@ box-shadow:0 2px 6px rgba(51,51,51,.2);
 	margin:0 auto}
 	section p{
 
-font-size: 18px;
+font-size: 16px;
 
 text-align: left;
 
@@ -1415,7 +1415,7 @@ clear:both;
 
 padding: 30px 0;
 
-background-color: #ffffff;
+background-color: rgb(254, 255, 233);
 
 box-shadow:0 2px 6px rgba(51,51,51,.2);
 }
@@ -1513,7 +1513,7 @@ position: sticky;
 
 max-width:100%;
 
-width: 94.5vw;
+width: 100vw;
 
 display:flex;
 
@@ -2763,7 +2763,7 @@ padding: 10px 80px;
 
 font-weight: 400;
 
-width: 58%;
+width: 72%;
 
 margin: auto;
 
@@ -2782,7 +2782,7 @@ font-weight: 500;
 
 padding: 25px 10px 50px 70px;
 
-width: 62.8%;
+width: 69.8%;
 
 margin: auto;
 
@@ -2839,7 +2839,7 @@ h2.titulo5 {
 
 position: relative;
 
-width: 97%;
+width: 99.99%;
 
 background-color: #f9284b;
 
